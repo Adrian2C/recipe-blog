@@ -5,3 +5,16 @@
     margin:0;
     padding:0;
 }
+.mainContainer{
+    border:1px solid red;
+    margin:0 12px;
+
+}
+img{
+    width:100%;
+}
+.dots{
+    width:15px;
+    display:block;
+    margin-top:20px;
+}
