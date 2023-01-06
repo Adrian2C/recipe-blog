@@ -1,20 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.mainContainer{
+.mainContainer {
+  border: 1px solid red;
+  margin: 40px 12px;
+}
+.mainContainer h1 {
+  font-size: 1.5rem;
+}
+.subtitle {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+.sub {
+  height: 88px;
+  width: 320px;
+  left: 36px;
+  top: 73px;
+  border-radius: nullpx;
+}
+.sub {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.dots {
+  width: 15px;
+  margin-top: 5px;
+  margin-right: 12px;
+}
+.yields {
+  /* display:felx; */
+  border: 1px solid red;
+}
+.yields i {
+  color: orange;
+}
+.yields h5 {
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bdbdbd;
+
+  width: 54px;
+  height: 11px;
+
+  text-transform: uppercase;
+}
+.yields p {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #f2994a;
+}
+.time{
     border:1px solid red;
-    margin:0 12px;
-
-}
-img{
-    width:100%;
-}
-.dots{
-    width:15px;
-    display:block;
-    margin-top:20px;
+    display:flex;
 }
