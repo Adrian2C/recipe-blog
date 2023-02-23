@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Document</title>
+    <title>DevChallenge - Recipe Web</title>
 </head>
 
 <body>
@@ -20,55 +20,82 @@
                 cheesecake recipe! Paired with a buttery graham cracker crust, no
                 one can deny its simple decadence. For the best results, bake in a water bath.</p>
         </div>
-        <img src="./assets/photo1.png" alt="foto de torta rica">
+        <img src="./assets/photo1.png" alt="foto de torta rica" class="cake">
 
-        <aside>
+        <aside class="aside">
             <div class="yields">
-
                 <i class="uil uil-restaurant"></i>
-                <h5>Yields</h5>
-
-                <p>12 servings</p>
+                <div class="text">
+                    <h5>Yields</h5>
+                    <p>12 servings</p>
+                </div>
             </div>
-            
+
             <div class="time">
-                <i class="uil uil-clock"></i>
-                <h5>prep time</h5>
-                <p>45 minutes</p>
-                <i class="uil uil-clock-five"></i>
-                <h5>cook time</h5>
-                <p>1 hour</p>
-                <i class="uil uil-clock-seven"></i>
-                <h5>total time</h5>
-                <p>7,75 hours</p>
+                <div class="time__container">
+                    <i class="uil uil-clock"></i>
+                    <div class="text">
+                        <h5 class="time_text">prep time</h5>
+                        <p>45 minutes</p>
+                    </div>
+                </div>
+                <div class="time__container">
+                    <i class="uil uil-clock"></i>
+                    <div class="text">
+                        <h5 class="time_text">cook time</h5>
+                        <p>1 hour</p>
+                    </div>
+                </div>
+                <div class="time__container">
+                    <i class="uil uil-clock"></i>
+                    <div class="text">
+                        <h5 class="time_text">total time</h5>
+                        <p>7,75 hours</p>
+                    </div>
+                </div>
+
             </div>
         </aside>
+
         <div class="recetario">
             <h3>Ingredients</h3>
-            <h4>Graham Cracker Crust</h4>
+            <h4 class="cake_name">Graham Cracker Crust</h4>
 
-            <ul>
-                <li>1 and 1/2 cups (150g) <span>graham cracker crumbs</span> (about 10 full sheet graham crackers)</li>
-                <li>5 Tablespoons (70g) <span>unsalted butter</span>, melted</li>
-                <li>1/4 cup (50g) <span>granulated sugar</span></li>
-            </ul>
+            <div class="ingredients">
 
-            <h4>Cheesecake</h4>
-            <ul>
-                <li>four 8-ounce blocks (904g) full-fat <span>cream cheese</span>, softened to room temperature</li>
-                <li>1 cup (200g) <span>granulated sugar</span></li>
-                <li>1 cup (240g) full-fat sour cream, at room temperature</li>
-                <li>1 teaspoon pure vanilla extract</li>
-                <li>2 teaspoons fresh lemon juice (optional, but recommended)</li>
-                <li>3 large eggs, at room temperature</li>
-                <li>topping suggestions: salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine
-                    chocolate ganache, fresh fruit, whipped cream, or raspberry sauce (recipe in notes)</li>
-            </ul>
+                <input type="checkbox" class="checkbox">
+                1 and 1/2 cups (150g) <span>graham cracker crumbs</span> (about 10 full sheet graham
+                crackers)<br>
 
-            <h3>Instructions</h3>
-            <ol>
-                <li>Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</li>
-                <li><span>Make the crust</span>: Using a food processor, pulse the graham crackers into crumbs. Pour
+                <input type="checkbox" class="checkbox"> 5 Tablespoons (70g) <span>unsalted butter</span>, melted
+                <br>
+
+                <input type="checkbox" class="checkbox"> 1/4 cup (50g) <span>granulated sugar</span>
+                <br>
+            </div>
+
+            <h4 class="cake_name">Cheesecake</h4>
+            <div class="ingredients">
+                <input type="checkbox" class="checkbox">four 8-ounce blocks (904g) full-fat <span>cream cheese</span>,
+                softened to room
+                temperature <br>
+                <input type="checkbox" class="checkbox">1 cup (200g) <span>granulated sugar</span><br>
+                <input type="checkbox" class="checkbox">1 cup (240g) full-fat sour cream, at room temperature<br>
+                <input type="checkbox" class="checkbox">1 teaspoon pure vanilla extract<br>
+                <input type="checkbox" class="checkbox">2 teaspoons fresh lemon juice (optional, but recommended)<br>
+                <input type="checkbox" class="checkbox">3 large eggs, at room temperature<br>
+                <input type="checkbox" class="checkbox">topping suggestions: salted caramel, lemon curd, strawberry
+                topping, chocolate
+                ganache, red wine
+                chocolate ganache, fresh fruit, whipped cream, or raspberry sauce (recipe in notes)
+            </div>
+
+            <h3 class="instruction">Instructions</h3>
+            <ol class="instruction__order">
+                <li class="instruction__text">Adjust the oven rack to the lower-middle position and preheat oven to
+                    350°F (177°C).</li>
+                <li class="instruction__text"><span>Make the crust</span>: Using a food processor, pulse the graham
+                    crackers into crumbs. Pour
                     into a
                     medium bowl and stir in sugar
                     and melted butter until combined. (You can also pulse it all together in the food processor.)
@@ -83,7 +110,8 @@
                     water
                     bath in step 4.
                     Allow crust to slightly cool as you prepare the filling.</li>
-                <li><span>Make the filling</span>: Using a handheld or stand mixer fitted with a paddle attachment, beat
+                <li class="instruction__text"><span>Make the filling</span>: Using a handheld or stand mixer fitted with
+                    a paddle attachment, beat
                     the
                     cream cheese and granulated
                     sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, about 2
@@ -96,7 +124,8 @@
                     To help prevent the cheesecake from deflating and cracking as it cools, avoid over-mixing the batter
                     as
                     best you can.</li>
-                <li><span>Prepare the simple water bath (see note)</span> Boil a pot of water. You need 1 inch of water
+                <li class="instruction__text"><span>Prepare the simple water bath (see note)</span> Boil a pot of water.
+                    You need 1 inch of water
                     in
                     your roasting pan for the
                     water bath, so make sure you boil enough. I use an entire kettle of hot water. As the water is
@@ -112,7 +141,8 @@
                     hot
                     water in.
                     Whichever is easier for you.)</li>
-                <li>Bake cheesecake for 55-70 minutes or until the center is almost set. When it’s done, the center of
+                <li class="instruction__text">Bake cheesecake for 55-70 minutes or until the center is almost set. When
+                    it’s done, the center of
                     the
                     cheesecake will
                     slightly wobble if you gently shake the pan. Turn the oven off and open the oven door slightly. Let
@@ -122,22 +152,25 @@
                     cool cheesecake
                     completely at room temperature. Then refrigerate the cheesecake for at least 4 hours or overnight.
                 </li>
-                <li>Use a knife to loosen the chilled cheesecake from the rim of the springform pan, then remove the
+                <li class="instruction__text">Use a knife to loosen the chilled cheesecake from the rim of the
+                    springform pan, then remove the
                     rim.
                     Using a clean
                     sharp knife, cut into slices for serving. For neat slices, wipe the knife clean and dip into warm
                     water
                     between each
                     slice.</li>
-                <li>Serve cheesecake with desired toppings. Cover and store leftover cheesecake in the refrigerator for
+                <li class="instruction__text">Serve cheesecake with desired toppings. Cover and store leftover
+                    cheesecake in the refrigerator for
                     up
                     to 5 days.</li>
             </ol>
 
-            <p>Source: https://sallysbakingaddiction.com/classic-cheesecake/</p>
+
         </div>
+        <p class="source">Source: <br>https://sallysbakingaddiction.com/classic-cheesecake/</p>
     </div>
-    <footer>created by Adrian2C - devChallenges.io</footer>
+    <footer>created by <span> <a href="https://github.com/Adrian2C"> Adrian2C</a></span> - devChallenges.io</footer>
 
 </body>
 

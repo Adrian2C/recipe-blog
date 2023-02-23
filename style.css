@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-
+/* General */
 * {
   margin: 0;
   padding: 0;
 }
+span {
+  font-weight: bold;
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: #525252;
+}
+/* main */
 .mainContainer {
-  border: 1px solid red;
   margin: 40px 12px;
 }
 .mainContainer h1 {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 .subtitle {
   display: flex;
@@ -22,58 +33,182 @@
   width: 320px;
   left: 36px;
   top: 73px;
-  border-radius: nullpx;
 }
+
 .sub {
-  font-family: Montserrat;
+  font-family: Montserrat, arial;
   font-size: 12px;
   font-style: italic;
-  font-weight: 500;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
 }
-img {
-  width: 100%;
-  border-radius: 10px;
-}
+
 .dots {
   width: 15px;
   margin-top: 5px;
   margin-right: 12px;
 }
 .yields {
-  /* display:felx; */
-  border: 1px solid red;
+  display: flex;
+  margin: 1.5rem 0.25rem;
 }
 .yields i {
   color: orange;
+  font-size: 20px;
+}
+.text {
+  margin-left: 5px;
 }
 .yields h5 {
+  font-family: Montserrat, arial;
+  line-height: 10px;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.yields p {
+  font-family: Montserrat, arial;
+  font-size: 13px;
+  color: #f2994a;
+}
+
+.time__container {
+  display: flex;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+.uil-clock {
+  margin: auto;
+}
+.time_text {
   font-family: Montserrat;
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 700;
   line-height: 10px;
   letter-spacing: 0em;
   text-align: left;
   color: #bdbdbd;
-
-  width: 54px;
-  height: 11px;
-
   text-transform: uppercase;
 }
-.yields p {
+.text p {
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
-  line-height: 12px;
-  letter-spacing: 0em;
-  text-align: left;
-
-  color: #f2994a;
 }
-.time{
-    border:1px solid red;
-    display:flex;
+/* RECETARIO */
+.recetario {
+  margin-top: 18px;
+}
+.cake_name {
+  font-family: Playfair Display;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.ingredients {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.checkbox {
+  margin-right: 8px;
+  width: 21px;
+  height: 21px;
+}
+/* ----Instrucciones------- */
+.instruction {
+  margin: 30px 0px;
+  font-family: Playfair Display;
+  font-size: 24px;
+}
+.instruction__order {
+  margin: 0px 15px 0px 25px;
+}
+.instruction__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: lista-personalizada;
+}
+
+ol li {
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 4px 0 10px 50px;
+}
+
+ol li:before {
+  font-family: "'Playfair Display'";
+  content: counter(lista-personalizada);
+  counter-increment: lista-personalizada;
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  padding: 11px 10px 0px 10px;
+  background: #f2994a;
+  color: white;
+  height: 33px;
+  width: 20px;
+}
+.source {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #bdbdbd;
+}
+footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  margin: 20px 14px;
+}
+/* -----------MEDIA QUERIES----------- */
+@media (min-width: 700px) {
+  .mainContainer h1 {
+    font-size: 2.5rem;
+    transition: 0.2s ease all;
+  }
+  .sub {
+    width: 500px;
+    height: 80px;
+  }
+  .aside {
+    margin-right: 10px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    flex-direction: column;
+    width: 216px;
+    height: 367px;
+    display: flex;
+  }
+  .uil-clock {
+    margin: 0px;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 900px;
+  }
 }
