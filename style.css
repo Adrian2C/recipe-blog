@@ -10,7 +10,7 @@ span {
 }
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 a {
   text-decoration: none;
@@ -18,55 +18,55 @@ a {
 }
 /* main */
 .mainContainer {
-  margin: 40px 12px;
+  margin: 2.5rem 0.75rem;
 }
 .mainContainer h1 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .subtitle {
   display: flex;
   align-items: flex-start;
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 .sub {
-  height: 88px;
-  width: 320px;
-  left: 36px;
-  top: 73px;
+  height: 5.5rem;
+  width: 20rem;
+  left: 2.25rem;
+  top: 4.5625rem;
 }
 
 .sub {
   font-family: Montserrat, arial;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: italic;
 }
 
 .dots {
-  width: 15px;
-  margin-top: 5px;
-  margin-right: 12px;
+  width: 0.9375rem;
+  margin-top: 0.3125rem;
+  margin-right: 0.75rem;
 }
 .yields {
   display: flex;
-  margin: 1.5rem 0.25rem;
+  margin: 24px 4px;
 }
 .yields i {
   color: orange;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .text {
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 .yields h5 {
   font-family: Montserrat, arial;
-  line-height: 10px;
+  line-height: 0.625rem;
   color: #bdbdbd;
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
 }
 .yields p {
   font-family: Montserrat, arial;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #f2994a;
 }
 
@@ -82,9 +82,9 @@ a {
 }
 .time_text {
   font-family: Montserrat;
-  font-size: 9px;
+  font-size: 0.5625rem;
   font-weight: 700;
-  line-height: 10px;
+  line-height: 0.625rem;
   letter-spacing: 0em;
   text-align: left;
   color: #bdbdbd;
@@ -92,47 +92,47 @@ a {
 }
 .text p {
   font-family: Montserrat;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 500;
 }
 /* RECETARIO */
 .recetario {
-  margin-top: 18px;
+  margin-top: 1.125rem;
 }
 .cake_name {
   font-family: Playfair Display;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: italic;
   font-weight: 400;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .ingredients {
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.5625rem;
 }
 .checkbox {
-  margin-right: 8px;
-  width: 21px;
-  height: 21px;
+  margin-right: 0.5rem;
+  width: 1.3125rem;
+  height: 1.3125rem;
 }
 /* ----Instrucciones------- */
 .instruction {
-  margin: 30px 0px;
+  margin: 1.875rem 0rem;
   font-family: Playfair Display;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .instruction__order {
-  margin: 0px 15px 0px 25px;
+  margin: 0rem 0.9375rem 0rem 1.5625rem;
 }
 .instruction__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0.625rem;
 }
 
 ol {
@@ -142,9 +142,9 @@ ol {
 
 ol li {
   position: relative;
-  font-size: 20px;
-  line-height: 30px;
-  padding: 4px 0 10px 50px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  padding: 0.25rem 0 0.625rem 3.125rem;
 }
 
 ol li:before {
@@ -153,62 +153,75 @@ ol li:before {
   counter-increment: lista-personalizada;
   position: absolute;
   left: 0;
-  border-radius: 5px;
-  font-size: 25px;
+  border-radius: 0.3125rem;
+  font-size: 1.5625rem;
   text-align: center;
-  padding: 11px 10px 0px 10px;
+  padding: 0.6875rem 0.625rem 0rem 0.625rem;
   background: #f2994a;
   color: white;
-  height: 33px;
-  width: 20px;
+  height: 2.0625rem;
+  width: 1.25rem;
 }
 .source {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   color: #bdbdbd;
+  margin-top: 1.875rem;
 }
 footer {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
   text-align: center;
   color: #828282;
-  margin: 20px 14px;
+  margin: 1.25rem 0.875rem;
 }
 /* -----------MEDIA QUERIES----------- */
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
+  .recetario {
+    width: 70%;
+  }
   .mainContainer h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
     transition: 0.2s ease all;
   }
   .sub {
-    width: 500px;
-    height: 80px;
+    width: 31.25rem;
+    height: 5rem;
   }
   .aside {
-    margin-right: 10px;
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-    border-radius: 12px;
+    box-shadow: 0rem 0rem 1.25rem rgb(0 0 0 / 10%);
+    border-radius: 0.75rem;
+    width: 10rem;
+    height: 15rem;
+    float: right;
+    margin-top: 2rem;
+  }
+  .time {
     flex-direction: column;
-    width: 216px;
-    height: 367px;
-    display: flex;
+    align-items: center;
+    height: 55%;
+  }
+
+  .yields {
+    justify-content: center;
   }
   .uil-clock {
-    margin: 0px;
+    margin: auto;
+    font-size: 20px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
   body {
-    width: 900px;
+    width: 56.25rem;
     margin: 0 auto;
   }
   img {
-    max-width: 900px;
+    max-width: 56.25rem;
   }
 }
